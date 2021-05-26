@@ -29,15 +29,17 @@ namespace kompis_gui
             {
                 lang = ValidationManager.GetValue(Request.QueryString["lang"].ToString());
                 id = ValidationManager.GetValue(Request.QueryString["id"].ToString());
-                ver = ValidationManager.GetValue(Request.QueryString["ver"].ToString());
                 val = ValidationManager.GetValue(Request.QueryString["val"].ToString());
-            } catch (Exception e)
+                // old parameter ver (tion) er ignored by api, so it is no longer read,
+                // but may be present in QueryString
+            }
+            catch (Exception e)
             {
                 log.Error(e);
                 ShowErrorMessage();
             }
  
-            KompisUrl = komisApiUrlBase + "/" + id + "/" + ver + "/" + val + "/";
+            KompisUrl = komisApiUrlBase + "/" + id + "/" + val + "/";
         }
         private void ShowKompisInfo()
         {
