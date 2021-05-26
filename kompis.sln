@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "parts_of_PCAxis.Web.Core", "parts_of_PCAxis.Web.Core\parts_of_PCAxis.Web.Core.vbproj", "{3AC36394-D37A-4458-907A-B4E891301CDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kompis-gui", "kompis-gui\kompis-gui.csproj", "{94228290-5363-472F-97E0-C2407DFDD7FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AC36394-D37A-4458-907A-B4E891301CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC36394-D37A-4458-907A-B4E891301CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC36394-D37A-4458-907A-B4E891301CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC36394-D37A-4458-907A-B4E891301CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94228290-5363-472F-97E0-C2407DFDD7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94228290-5363-472F-97E0-C2407DFDD7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94228290-5363-472F-97E0-C2407DFDD7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94228290-5363-472F-97E0-C2407DFDD7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {883165A3-D3BF-4061-90BC-3865D0D22D76}
+	EndGlobalSection
+EndGlobal
