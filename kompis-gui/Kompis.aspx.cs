@@ -12,7 +12,6 @@ namespace kompis_gui
 
         string komisApiUrlBase;
         string id;
-        string ver;
         string val;
         string lang;
         string KompisUrl;
