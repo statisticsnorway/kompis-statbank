@@ -15,7 +15,6 @@ namespace kompis_gui
         string val;
         string lang;
         string KompisUrl;
-        string json;
         protected void Page_Load(object sender, EventArgs e)
         {
             init();
@@ -44,12 +43,11 @@ namespace kompis_gui
         {
             try
             {
-                var client = new WebClientWithTimeout();
-                client.Headers["Content_type"] = "application/json;charset=UTF-8";
-                client.Encoding = System.Text.Encoding.UTF8;
-                json = client.DownloadString(KompisUrl);
+                string json = KompisApiClient.GetJson(KompisUrl);
 
                 Kompisresult kompisresult = JsonConvert.DeserializeObject<Kompisresult>(json);
+
+                //string ping = KompisApiClient.GetJson("http://al-kostra-app-utv.ssb.no:7020/actuator/info");
 
                 if (lang == "no")
                 {
@@ -74,6 +72,7 @@ namespace kompis_gui
             }
             catch (Exception e)
             {
+                log.Error("Source api url:" + KompisUrl);
                 log.Error(e);
                 ShowErrorMessage();
             }

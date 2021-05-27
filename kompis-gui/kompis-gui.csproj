@@ -90,6 +90,7 @@
     <Compile Include="Kompis.aspx.designer.cs">
       <DependentUpon>Kompis.aspx</DependentUpon>
     </Compile>
+    <Compile Include="KompisApiClient.cs" />
     <Compile Include="Kompisresult.cs" />
     <Compile Include="Ping\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
