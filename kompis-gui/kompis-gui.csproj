@@ -76,6 +76,7 @@
     <Content Include="App_Data\emptyfile.txt" />
     <Content Include="Global.asax" />
     <Content Include="Kompis.aspx" />
+    <Content Include="Ping\Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +91,13 @@
       <DependentUpon>Kompis.aspx</DependentUpon>
     </Compile>
     <Compile Include="Kompisresult.cs" />
+    <Compile Include="Ping\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ping\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebClientWithTimeout.cs">
       <SubType>Component</SubType>

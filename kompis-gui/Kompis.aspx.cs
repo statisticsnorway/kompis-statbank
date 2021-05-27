@@ -29,7 +29,7 @@ namespace kompis_gui
                 lang = ValidationManager.GetValue(Request.QueryString["lang"].ToString());
                 id = ValidationManager.GetValue(Request.QueryString["id"].ToString());
                 val = ValidationManager.GetValue(Request.QueryString["val"].ToString());
-                // old parameter ver (tion) er ignored by api, so it is no longer read,
+                // old parameter ver(tion) er ignored by api, so it is no longer read,
                 // but may be present in QueryString
             }
             catch (Exception e)
