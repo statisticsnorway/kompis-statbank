@@ -76,10 +76,10 @@
     <Content Include="App_Data\emptyfile.txt" />
     <Content Include="Global.asax" />
     <Content Include="statbank\Default.aspx" />
-    <Content Include="Monitor\accept.png" />
-    <Content Include="Monitor\Default.aspx" />
-    <Content Include="Monitor\exclamation.png" />
-    <Content Include="Ping\Default.aspx" />
+    <Content Include="statbank\Monitor\accept.png" />
+    <Content Include="statbank\Monitor\Default.aspx" />
+    <Content Include="statbank\Monitor\exclamation.png" />
+    <Content Include="statbank\Ping\Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -95,18 +95,18 @@
     </Compile>
     <Compile Include="statbank\KompisApiClient.cs" />
     <Compile Include="statbank\Kompisresult.cs" />
-    <Compile Include="Monitor\Default.aspx.cs">
+    <Compile Include="statbank\Monitor\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Monitor\Default.aspx.designer.cs">
+    <Compile Include="statbank\Monitor\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Ping\Default.aspx.cs">
+    <Compile Include="statbank\Ping\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ping\Default.aspx.designer.cs">
+    <Compile Include="statbank\Ping\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
