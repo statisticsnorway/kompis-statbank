@@ -22,7 +22,8 @@ namespace kompis_gui
         }
         private void init()
         {
-            komisApiUrlBase = WebConfigurationManager.AppSettings["KompisApiUrl"];
+            komisApiUrlBase = WebConfigurationManager.AppSettings["KompisServerUrl"] + WebConfigurationManager.AppSettings["KompisApiPath"];
+
             try
             {
                 lang = ValidationManager.GetValue(Request.QueryString["lang"].ToString());

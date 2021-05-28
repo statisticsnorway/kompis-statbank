@@ -19,8 +19,7 @@ namespace Monitor
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            monitorDirekteUrl = WebConfigurationManager.AppSettings["MonitorFullUrl"];
-            monitorDirekteUrl = "http://al-kostra-app-utv.ssb.no:7020/actuator/info";
+            monitorDirekteUrl = WebConfigurationManager.AppSettings["KompisServerUrl"] + WebConfigurationManager.AppSettings["KompisPingPath"];
             GetTableQuery(monitorDirekteUrl);
         }
 
