@@ -10,11 +10,14 @@ using System.Reflection;
 using Newtonsoft.Json;
 using System.Web.Configuration;
 using kompis_gui;
+using log4net;
 
 namespace Monitor
 {
     public partial class Default : System.Web.UI.Page
     {
+        private static readonly ILog log = LogManager.GetLogger("Monitor");
+
         string monitorDirekteUrl;
         
         protected void Page_Load(object sender, EventArgs e)
@@ -30,8 +33,9 @@ namespace Monitor
                 string ping = KompisApiClient.GetJson(pMonitorUrl);
                 getQueryDirekte.CssClass = "applicationOK";  
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                log.Error(e);
                 getQueryDirekte.CssClass = "applicationERROR";
             }
         }
