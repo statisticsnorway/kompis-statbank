@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Kompis.aspx.cs" Inherits="kompis_gui.Kompis" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="kompis_gui.Default" %>
 
 <!DOCTYPE html>
 

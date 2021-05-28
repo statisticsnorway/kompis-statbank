@@ -11,7 +11,7 @@ namespace kompis_gui
 {
 
 
-    public partial class Kompis
+    public partial class Default
     {
 
         /// <summary>

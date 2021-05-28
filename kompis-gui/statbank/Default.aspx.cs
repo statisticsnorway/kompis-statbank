@@ -6,9 +6,9 @@ using System.Web.Configuration;
 
 namespace kompis_gui
 {
-    public partial class Kompis : System.Web.UI.Page
+    public partial class Default : System.Web.UI.Page
     {
-        private static readonly ILog log = LogManager.GetLogger("Kompis");
+        private static readonly ILog log = LogManager.GetLogger("KompisStatbank");
 
         string komisApiUrlBase;
         string id;
