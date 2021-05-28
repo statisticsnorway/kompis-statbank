@@ -76,6 +76,9 @@
     <Content Include="App_Data\emptyfile.txt" />
     <Content Include="Global.asax" />
     <Content Include="Kompis.aspx" />
+    <Content Include="Monitor\accept.png" />
+    <Content Include="Monitor\Default.aspx" />
+    <Content Include="Monitor\exclamation.png" />
     <Content Include="Ping\Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -92,6 +95,13 @@
     </Compile>
     <Compile Include="KompisApiClient.cs" />
     <Compile Include="Kompisresult.cs" />
+    <Compile Include="Monitor\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitor\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Ping\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

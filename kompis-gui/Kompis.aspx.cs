@@ -47,7 +47,6 @@ namespace kompis_gui
 
                 Kompisresult kompisresult = JsonConvert.DeserializeObject<Kompisresult>(json);
 
-                //string ping = KompisApiClient.GetJson("http://al-kostra-app-utv.ssb.no:7020/actuator/info");
 
                 if (lang == "no")
                 {
