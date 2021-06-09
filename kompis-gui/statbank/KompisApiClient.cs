@@ -25,7 +25,12 @@ namespace kompis_gui
                 myOut = client.DownloadString(url);
             } catch(System.Net.WebException e)
             {
-                if (!(status404isOk && e.Message.Equals("Den eksterne serveren returnerte feilen (404) Finner ikke filen.")))
+                bool messageIs404 = false;
+                if(e.Message.Contains("(404)")) {
+                    messageIs404 = true;
+                } 
+
+                if ( ! (status404isOk && messageIs404) )
                 {
                     throw e;
                 }
