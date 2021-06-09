@@ -30,7 +30,7 @@ namespace Monitor
         {
             try
             {
-                string ping = KompisApiClient.GetJson(pMonitorUrl);
+                string ping = KompisApiClient.GetJson(pMonitorUrl,true);
                 getQueryDirekte.CssClass = "applicationOK";  
             }
             catch (Exception e)

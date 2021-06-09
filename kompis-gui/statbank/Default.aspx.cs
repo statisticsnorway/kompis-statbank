@@ -44,7 +44,7 @@ namespace kompis_gui
         {
             try
             {
-                string json = KompisApiClient.GetJson(KompisUrl);
+                string json = KompisApiClient.GetJson(KompisUrl, false);
 
                 Kompisresult kompisresult = JsonConvert.DeserializeObject<Kompisresult>(json);
 

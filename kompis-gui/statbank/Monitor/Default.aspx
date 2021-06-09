@@ -71,7 +71,7 @@
     <div class="seksjon">
         <h2>Tester request mot Kompis API  </h2>
         <div>
-            <asp:Panel runat="server" ID="getQueryDirekte"><strong>API:</strong> Testet GET <%Response.Write(MonitorDirekteUrl);%></asp:Panel>
+            <asp:Panel runat="server" ID="getQueryDirekte"><strong>API:</strong> Testet GET gir 404 <%Response.Write(MonitorDirekteUrl);%></asp:Panel>
         </div>
        
         <div class="info">
